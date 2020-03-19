@@ -1,6 +1,6 @@
 # EEG_cocktail_decoding
 
-SAMPLE CODE FOR SIMPLE DECODING AUDITORY ATTENTION FROM EEG IN A TWO-SPEAKER COCKTAIL PARTY SCENARIO
+Sample code and data for simple auditory attention decoding from EEG in the context of a two-speaker cocktail party paradigm 
 
 Experiment:
 Subjects were played audio clips in which there were two simultaneous talkers. They were tasked with attending to one of the two talkers. 
