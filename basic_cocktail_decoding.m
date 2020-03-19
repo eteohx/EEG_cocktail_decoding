@@ -30,7 +30,7 @@ load([wd 'competing_speaker_order.mat'])
 for subidx = 1
     subj = ['Subject' num2str(subidx) '_sample'];
     disp(subj)
-    data_dir = [wd 'data\' subj '\'];
+    data_dir = [wd subj '\'];
     tic
     % SET UP
     % put stimulus representations and EEG responses into cell matrices for
