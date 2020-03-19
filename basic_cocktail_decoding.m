@@ -18,9 +18,9 @@ fin =  250;
 lambda = 2.^(-2:30); %if taking too long, try [1e1 1e2 1e3 1e4 1e5 1e6 1e7 1e8];
 
 %load stimulus representations
-load([wd 'F_allstim.mat'])
+load([wd 'F_env.mat'])
 stim1F = stim1; 
-load([wd 'M_allstim.mat'])
+load([wd 'M_env.mat'])
 stim1M = stim1; 
 
 % trials for the competing speaker were shuffled... load the order here
@@ -28,7 +28,7 @@ load([wd 'competing_speaker_order.mat'])
 
 % Loop across subjects
 for subidx = 1
-    subj = ['Subject' num2str(subidx)];
+    subj = ['Subject' num2str(subidx) '_sample'];
     disp(subj)
     data_dir = [wd 'Pre-processed_Data\' subj '\'];
     tic
@@ -36,8 +36,8 @@ for subidx = 1
     % put stimulus representations and EEG responses into cell matrices for
     % TRF
     att_stim = {}; unatt_stim = {}; resp = {};
-    for block = 1:2
-        for trialidx = 1:20
+    for block = 1 %:2
+        for trialidx = 1:5 %:20
             load([data_dir num2str(block) '_' num2str(trialidx) '.mat']);
             resp = [resp, zscore(eeg)];
             if block == 1
