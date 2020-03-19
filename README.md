@@ -15,3 +15,6 @@ Auditory Attention Decoding Steps:
     resembled the envelope of the attended talker, the trial is deemed to be correctly classified.
     
 (3) This was repeated n times, repeating the trial to be tested to attain an average decoding accuracy
+
+
+More cocktail party data can be obtained from https://datadryad.org/stash/dataset/doi:10.5061/dryad.070jc
