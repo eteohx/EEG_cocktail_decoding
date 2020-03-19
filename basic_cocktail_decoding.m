@@ -9,7 +9,7 @@
 % add TRF to path and define working directory
 % MTRF TOOLBOX: https://sourceforge.net/projects/aespa/
 addpath(genpath('path\to\mTRF_1.5'));
-wd = 'path\to\Basic_Cocktail_Decoding\';
+wd = 'path\to\EEG_cocktail_decoding\';
 
 % TRF parameters
 fs = 128;
@@ -30,7 +30,7 @@ load([wd 'competing_speaker_order.mat'])
 for subidx = 1
     subj = ['Subject' num2str(subidx) '_sample'];
     disp(subj)
-    data_dir = [wd 'Pre-processed_Data\' subj '\'];
+    data_dir = [wd 'data\' subj '\'];
     tic
     % SET UP
     % put stimulus representations and EEG responses into cell matrices for
