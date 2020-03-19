@@ -1,8 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Cocktail party: Decoding attentional selection               %
 %                     using stimulus reconstruction                %
-%                     (O'Sullivan et al., 2015)                    %
-%  Data from datadryad.org/stash/dataset/doi:10.5061/dryad.070jc   %
+%                     (akin to O'Sullivan et al., 2015)            %
 %    (Author: ETeoh, 2019)                                         %
 %                                                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -18,17 +17,16 @@ fin =  250;
 lambda = 2.^(-2:30); %if taking too long, try [1e1 1e2 1e3 1e4 1e5 1e6 1e7 1e8];
 
 %load stimulus representations
-%stim1 is envelope, stim2 is relative pitch
 load([wd 'F_allstim.mat'])
-stim1F = stim1; %stim2F = stim2;
+stim1F = stim1; 
 load([wd 'M_allstim.mat'])
-stim1M = stim1; %stim2M = stim2;
+stim1M = stim1; 
 
 % trials for the competing speaker were shuffled... load the order here
 load([wd 'competing_speaker_order.mat'])
 
 % Loop across subjects
-for subidx = 1:14
+for subidx = 1
     subj = ['Subject' num2str(subidx)];
     disp(subj)
     data_dir = [wd 'Pre-processed_Data\' subj '\'];
