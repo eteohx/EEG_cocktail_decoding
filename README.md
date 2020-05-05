@@ -2,11 +2,12 @@
 
 Sample code and data for simple auditory attention decoding from EEG in the context of a two-speaker cocktail party paradigm 
 
-Experiment:
+## Background
 
-Subjects were played audio clips in which there were two simultaneous talkers. They were tasked with attending to one of the two talkers. 
+Can we decode the talker to which someone is attending based on their brain (EEG) signals? 
+An experiment was conducted: Volunteers were played audio clips in which there were two simultaneous talkers. They were tasked with attending to one of the two talkers. 
 
-Auditory Attention Decoding Steps:
+## Auditory Attention Decoding Steps
 
 (1) Training: EEG of the subject listening to n-1 audio clips was regressed onto the acoustic envelope of the attended talker 
     using regularised linear regression (mTRF toolbox)
