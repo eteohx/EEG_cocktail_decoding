@@ -17,5 +17,6 @@ An experiment was conducted: Volunteers were played audio clips in which there w
     
 (3) This was repeated n times, repeating the trial to be tested to attain an average decoding accuracy
 
-
-More cocktail party data can be obtained from https://datadryad.org/stash/dataset/doi:10.5061/dryad.070jc
+## Resources
+* More cocktail party data can be obtained from https://datadryad.org/stash/dataset/doi:10.5061/dryad.070jc
+* mTRF toolbox: https://sourceforge.net/projects/aespa/
