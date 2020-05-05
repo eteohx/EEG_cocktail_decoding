@@ -9,7 +9,7 @@
 % add TRF to path and define working directory
 % MTRF TOOLBOX: https://sourceforge.net/projects/aespa/
 addpath(genpath('path\to\mTRF_1.5'));
-wd = 'path\to\EEG_cocktail_decoding\';
+wd = 'path\to\EEG_cocktail_decoding\data\';
 
 % TRF parameters
 fs = 128;
